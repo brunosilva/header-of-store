@@ -1,0 +1,17 @@
+{
+  "name": "header-of-store",
+  "version": "1.0.0",
+  "description": "header of store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bruno Silva <brs.rsilva@gmail.com> (https://www.linkedin.com/in/bruno-silva0109/)",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  }
+}
