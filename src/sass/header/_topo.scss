@@ -1,0 +1,139 @@
+.topo{
+    .container{
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width:767px) {
+            flex-direction: column;
+        }
+
+        .logo{
+            width: 150px;
+            height: 80px;
+
+            @media screen and (min-width:768px) {
+                .control-mobile{
+                    display: none;
+                }
+
+                .hamburger-menu{
+                    display: none;
+                }
+            }
+
+            @media screen and (max-width:767px) {
+                width: 100%;
+                max-height: 80px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .control-mobile{
+                    display: flex;
+                    justify-content: space-between;
+
+                    .itens-control{
+                        margin: 0 15px;
+
+                        .login{
+                            display: none;
+                        }
+                    }
+                }
+
+                .hamburger-menu{
+                    .first-line{
+                        display: flex;
+                        justify-content: space-between;
+                        padding-right: 10px;
+                        background-color: lighten($color: teal, $amount: 10%) ; 
+                    }
+
+                    aside{
+                        ul{
+                            li{
+                                a{
+                                    color: $light-gray;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            img{
+                width: 100%;
+
+                @media screen and (max-width:767px) {
+                    width: auto;
+                    height: 100%;
+                }
+            }
+        }
+
+        .controls{
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+
+            @media screen and (max-width:767px) {
+                flex-wrap: wrap;
+            }
+
+            .itens-control{
+                margin: 0 15px;
+
+                @media screen and (max-width:767px) {
+                    display: none;
+                }
+            }
+
+            .search{
+                width: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                .input-search{
+                    width: 150px;
+                    border: 0px solid transparent;
+                    border-bottom: 1px solid $light-gray;
+                }
+
+                @media screen and (max-width:767px) {
+                    width: 100%;
+                    margin: 10px 0;
+
+                    .input-search{
+                        outline: none;
+                        width: 100%;
+                        border: 0px solid transparent;
+                        border-bottom: 1px solid $light-gray;
+                    }
+                }
+
+                @media screen and (min-width:768px) {
+                    :focus{
+                        outline: none !important;
+                        width: 300px;
+                        transition: 0.6s;
+    
+                        .input-search{
+                            width: 300px;
+                            border: 0px solid transparent;
+                            outline: none !important;
+                            border-bottom: 1px solid $light-gray;
+                        }
+    
+                        
+                    }
+                }
+            }
+        }
+
+        a{
+            font-size: 14px;
+            color: $dark-silver;
+        }
+    }
+}
