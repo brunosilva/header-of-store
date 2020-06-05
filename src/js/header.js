@@ -1,32 +1,13 @@
+$(document).ready(() =>{
 
-function explodesNav(level, sub){
-    var le = level;
-    var su = sub;
-
-    $(`#${le}`).mouseenter(() => {
-        $(`#${su}`).fadeIn(700, () =>{
-            $('.sub1').addClass('sub-effects');
-        });
+    //script para fazer apresentação do sub-menu
+    //não está sendo usado. (somente para estudo)
+    $(".l2").mouseenter(function() {
+        $(this).addClass('sub-effects');
+        $(this).find('.sub1').fadeIn(600);
     });
-    $(`#${le}`).mouseleave(() => {
-        $(`#${su}`).hide();
-        $('.sub1').removeClass('sub-effects');
+    $(".l2").mouseleave(function() {
+        $(this).removeClass('sub-effects');
+        $(this).find('.sub1').hide();
     });
-};
-
-//$(window).load(() =>{
-    
-
-    //function explodesNav(level){
-        //alert(level)
-        // var le = level;
-        // var su = sub;
-
-        // $(`#${le}`).mouseenter(() => {
-        //     $(`#${su}`).fadeIn(700);
-        // });
-        // $(`#${le}`).mouseleave(() => {
-        //     $(`#${su}`).hide();
-        // });
-    //};
-//});
+});

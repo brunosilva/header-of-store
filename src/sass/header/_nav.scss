@@ -26,7 +26,10 @@
             position: relative;
 
             &:hover, &:active{
-                background-color: $light-gray;
+                background-color: $light-green;
+                a{
+                    color: $white;
+                }
             }
             
             a{
@@ -34,48 +37,38 @@
                 text-decoration: none;
             }
 
-            .sub1{
-                display: none;
-            }
-
             &.l2{
+                overflow: hidden;
+
                 &:hover{
-                    .sub-effects{
-                        transition: 0.5s;
-                    }
+                    overflow: visible;
+
                     .sub1{
-                        z-index: 1;
-                        min-width: 150px;
-                        position: absolute;
-                        background-color: lighten($color: $black, $amount: 40%);
-                        margin-top: 10px;
-                        left: 0;
+                        transform: translateY(0);
+                    }
+                }
 
-                        li{
-                            padding: 10px 20px;
-                            &:hover{
-                                background-color: lighten($color: $black, $amount: 30%);
-                            }
-                            
-                            a{
-                                color: $white;
-                            }
+                .sub1{
+                    z-index: 1;
+                    min-width: 150px;
+                    position: absolute;
+                    background-color: $v2-dark;
+                    margin-top: 10px;
+                    left: 0;
+                    transform: translateY(10%);
+                    transition: all .75s;
+
+                    li{
+                        padding: 10px 20px;
+                        width: 100%;
+                        
+                        &:hover{
+                            background-color: darken($color: $v2-dark, $amount: 5%);
+                            transition: 0.3s;
                         }
-
-                        .sub2{
-                            display: none;
-                        }
-
-                        &.l3{
-                            &:hover{
-                                .sub2{
-                                    min-width: 150px;
-                                    background-color: $black;
-                                    transition:0.5s;
-                                    display: block;
-                                    padding: 10px 20px;
-                                }
-                            }
+                        
+                        a{
+                            color: $white;
                         }
                     }
                 }
