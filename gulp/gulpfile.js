@@ -64,7 +64,6 @@ gulp.task('default', gulp.series('dev', 'watch'));
 
 /*
  * Compila os arquivos js
- * ==== (No modelo que está estruturada a aplicação da UOL não se compila arquivos js) ====
  * 
 */
 /*

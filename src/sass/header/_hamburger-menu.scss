@@ -1,7 +1,10 @@
- nav.hamburger-menu aside {
-    width: 100%;                /* menu width */
-    }
- nav.hamburger-menu {
-    color: gainsboro;            /* menu font color */
-    background-color: teal;      /* menu background color */
-    }
+ nav{
+   .hamburger-menu{
+      color: gainsboro;            /* menu font color */
+      background-color: teal;      /* menu background color */
+      
+      aside {
+         width: 100%;                /* menu width */
+      }
+   }
+}
