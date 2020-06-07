@@ -1,0 +1,45 @@
+.header{
+    .topo{
+        .container{
+            .d-none{
+                display: none;
+            }
+            .control-login-options{
+                position: absolute;
+                background-color: $v2-dark;
+                z-index: 9;
+                margin-top: 70px;
+                left: calc(100vw - 20%);
+
+                @media screen and (max-width:767px) {
+                    left: calc(100vw - 50%);
+                }
+
+                ul{
+                    padding: 0;
+                    list-style: none;
+                    margin: 0;
+
+                    li{
+                        padding: 12px 18px;
+
+                        &:hover{
+                            background-color: lighten($color: $v2-dark, $amount: 10%);
+                        }
+
+                        a{
+                            color: $light-gray;
+                            text-decoration: none;
+
+                            .fas {
+                                margin-right: 10px;
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+}
