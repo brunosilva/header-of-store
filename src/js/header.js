@@ -17,11 +17,11 @@ $(document).ready(() =>{
     });
 
     $(".btn-checkout").click(function() {
-        $(".mini-cart").slideDown("slow");
+        $("#miniCartOverlay").slideToggle("slow").css( "display", "flex" );
     });
 
     $(".btn-close").click(function() {
-        $(".mini-cart").slideUp("slow");
+        $("#miniCartOverlay").slideUp("slow").css( "display", "none" );
     });
 
 });
