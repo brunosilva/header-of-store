@@ -14,18 +14,25 @@ const publicRoot = '..',
 module.exports = {
   root,
   theme: {
-    main: {
-      scss: {
-        src: `${paths.src}/${paths.scss}/main.scss`,
-        dist: `${paths.dist}/${paths.css}`,
-        filename: 'main.css' 
-      }
-    },
+    // main: {
+    //   scss: {
+    //     src: `${paths.src}/${paths.scss}/main.scss`,
+    //     dist: `${paths.dist}/${paths.css}`,
+    //     filename: 'main.css' 
+    //   }
+    // },
     header: {
       scss: {
         src: `${paths.src}/${paths.scss}/header/module.scss`,
         dist: `${paths.dist}/${paths.css}`,
         filename: 'header.css' 
+      }
+    },
+    checkout: {
+      scss: {
+        src: `${paths.src}/${paths.scss}/checkout/module.scss`,
+        dist: `${paths.dist}/${paths.css}`,
+        filename: 'checkout.css' 
       }
     }
   },

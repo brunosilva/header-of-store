@@ -13,11 +13,15 @@ $(document).ready(() =>{
 
 
     $(".btn-login").click(function() {
-        var box = $(".control-login-options");
-        if(box.hasClass("d-none")){
-            box.removeClass("d-none");
-        }else{
-            box.addClass("d-none");
-        }
+        $(".control-login-options").slideToggle("slow");
     });
+
+    $(".btn-checkout").click(function() {
+        $(".mini-cart").slideDown("slow");
+    });
+
+    $(".btn-close").click(function() {
+        $(".mini-cart").slideUp("slow");
+    });
+
 });

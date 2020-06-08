@@ -10,6 +10,7 @@
                 z-index: 9;
                 margin-top: 70px;
                 left: calc(100vw - 20%);
+                display: none;
 
                 @media screen and (max-width:767px) {
                     left: calc(100vw - 50%);

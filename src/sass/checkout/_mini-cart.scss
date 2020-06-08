@@ -1,0 +1,17 @@
+.mini-cart{
+    z-index: 99;
+    width: 350px;
+    position: absolute;
+    background-color: #444444;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: none;
+
+    .title{
+        display: flex;
+        justify-content: space-between;
+        padding: 7px 10px;
+        color: #fff;
+    }
+}
