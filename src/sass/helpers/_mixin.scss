@@ -1,0 +1,26 @@
+//Mixin para padronizar scrollbar
+//1 parametro : background
+//2 parametro : cor da barra que tera animacao de scroll
+@mixin scrollbar($background, $bar){
+    &::-webkit-scrollbar { 
+        background-color: $background!important; 
+        width: 4px!important; 
+    }
+    
+    &::-webkit-scrollbar-button{ 
+        display: none!important;
+    }
+
+    &::-webkit-scrollbar-track { 
+        background-color: $background!important; 
+    }
+
+    &::-webkit-scrollbar-track-piece  { 
+        background-color: $background!important; 
+    }
+
+    &::-webkit-scrollbar-thumb { 
+        background-color: $bar!important; 
+        border-radius: 12px!important; 
+    }
+}
