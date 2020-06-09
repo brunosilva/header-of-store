@@ -13,7 +13,11 @@ $(document).ready(() =>{
 
 
     $(".btn-login").click(function() {
-        $(".control-login-options").slideToggle("slow");
+        $(".control-login-options").slideToggle("slow").css( "display", "flex" );
+    });
+
+    $(".btn-close").click(function() {
+        $(".control-login-options").slideUp("slow").css( "display", "none" );
     });
 
     $(".btn-checkout").click(function() {
