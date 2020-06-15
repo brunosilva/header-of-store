@@ -35,23 +35,6 @@
     }
 
     .finish{
-        background-color: $light-green;
-        width: 100%;
-        padding: 10px 0;
-        text-align: center;
-        cursor: pointer;
-
-        &:hover{
-            background-color: darken($color: $light-green, $amount: 5%);
-        }
-
-        a{
-            font-size: 16px;
-            color: $white;
-
-            &:hover{
-                text-decoration: none;
-            }
-        }
+        @include create-buttom($light-green, $white);
     }
 }
