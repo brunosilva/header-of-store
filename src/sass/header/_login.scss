@@ -74,6 +74,18 @@
                         margin-top: 10px;
                     }
                 }
+
+                .helpers-login{
+                    height: calc(90vh - 326px);
+                    position: relative;
+                    padding: 7px 10px;
+
+                    .links {
+                        width: 100%;
+                        bottom: 0;
+                        position: absolute;
+                    }
+                }
             }
 
             .options-login{
